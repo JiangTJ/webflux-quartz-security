@@ -18,7 +18,7 @@ public class QuartzServiceImpl implements QuartzService {
     //账单更新
     @Override
     @Transactional(rollbackFor = Exception.class)
-    @Scheduled(cron = "${baimi.bill.status.update}")
+    @Scheduled(cron = "${example.bill.status.update}")
     public void updateBillStatus() {
         logger.error("--------1");
     }
